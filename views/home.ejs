@@ -1,0 +1,40 @@
+<%- include("./partials/header") %>
+
+
+<div class="containter">
+
+	<div id="nav" class="jumbotron">
+		<h3>Sorting Algorithm Visualization</h3>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<div>
+					<small>Current Wait Time (ms): <span id="currentWaitTime">10</span></small>	
+				</div>
+				<div class="sliderContainer">
+					<input type="range" id="waitTime" value="10" min="0" step="10" max="1000" class="slider">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div>
+					<small>Current number of samples: <span id="currentSample">50</span></small>	
+				</div>
+				<div class="sliderContainer">
+					<input type="range" min="30" max="100" value="50" class="slider" id="sampleNumberInput">
+				</div>
+			</div>
+		</div>
+		<div>
+			<button class="btn btn-sm btn-success" id="ArrGenBtn">Generate Array</button>
+			<button class="btn btn-sm btn-warning" id="BubleSort">Buble Sort</button>
+			<button class="btn btn-sm btn-warning" id="SelectionSort">Selection Sort</button>
+			<button class="btn btn-sm btn-warning" id="MergeSort">Merge Sort</button>
+			<button class="btn btn-sm btn-warning" id="QuickSort">Quick Sort</button>
+			<button class="btn btn-sm btn-warning" id="HeapSort">Heap Sort</button>
+		</div>
+	</div>
+	<div>
+		<canvas id="myCanvas" width="1200" height="500">
+	</div>	
+</div>
+<%- include("./partials/footer") %>
